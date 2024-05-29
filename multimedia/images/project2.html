@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        background-color: black;
+        margin: 0%;
+      }
+      .profile {
+        width: 100%;
+        height: 100%;
+      }
+      .profile img {
+        width: 100%;
+        height: 150vh;
+      }
+      h1 {
+        color: rgb(51, 90, 77);
+        text-align: center;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        font-size: 52px;
+      }
+      #pic {
+        color: burlywood;
+        font-size: 25px;
+        text-align: center;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+      }
+      #name {
+        color: bisque;
+        font-size: 35px;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+      }
+      #p2 {
+        color: rgb(211, 205, 197);
+      }
+      .cnt {
+        /* text-align: center; */
+        margin: 40px 150px 20px;
+      }
+      .Skills {
+        margin: 10px 50px 20px;
+      }
+      #mys {
+        font-size: 30px;
+      }
+      .hole {
+        color: whitesmoke;
+        font-size: 25px;
+      }
+      .in {
+        margin: 20px 150px 20px;
+      }
+      .dev {
+        width: 82%;
+        height: 20vh;
+        background-color: rgb(134, 126, 126);
+        display: flex;
+        /* justify-content: space-evenly; */
+        margin: 10px 120px 10px;
+      }
+      .red {
+        width: 80%;
+        height: 20vh;
+        color: red;
+        background-color: white;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        font-size: 25px;
+      }
+      #rs {
+        color: rgb(158, 86, 86);
+        background-color: rgb(79, 196, 151);
+        width: 10vw;
+        height: 5vh;
+        margin-left: 130px;
+      }
+      .price {
+        display: flex;
+        /* gap: 10px; */
+        text-align: center;
+        justify-content: space-around;
+      }
+      .price p {
+        color: rgb(207, 207, 230);
+        height: 7vh;
+
+        font-size: 20px;
+      }
+      .price1 {
+        /* background-color: white; */
+        width: 30vw;
+        height: 30vh;
+      }
+      .price2 {
+        /* background-color: white; */
+        width: 30vw;
+        height: 30vh;
+      }
+      .mod {
+        width: 7vw;
+        height: 10vh;
+        border-radius: 130%;
+      }
+      .fat {
+        /* display: flex; */
+        margin: 160px;
+      }
+      /* .div img {
+          width: 100%;
+        }
+        .photos {
+          display: flex;
+          flex-direction: column;
+          margin: 200px;
+        }
+        .pic1 {
+          display: flex;
+        } */
+      .photos {
+        width: 70%;
+        margin-left: 15%;
+        /* border: 1px solid; */
+      }
+      .photos-1 {
+        margin-left: 10%;
+        width: 100%;
+        /* border: 1px solid; */
+        display: flex;
+
+        gap: 5px;
+      }
+      .photos-2 {
+        width: 50%;
+        gap: 5px;
+      }
+      .photos-2 img {
+        width: 40%;
+        height: 400px;
+      }
+      .photos {
+        width: 80%;
+        margin-left: 5%;
+      }
+      .photos-1 {
+        width: 120%;
+        display: flex;
+        flex-direction: column;
+      }
+      .photos-2 {
+        width: 100%;
+      }
+      .far {
+        margin-left: 190px;
+        display: flex;
+        flex-direction: column;
+      }
+      .rad {
+        width: 90%;
+        height: 5vh;
+        background-color: wheat;
+        margin: 8px;
+      }
+      .sidebar {
+        display: flex;
+        position: fixed;
+        gap: 10px;
+        padding: 10px;
+        flex-direction: column;
+      }
+      img:hover {
+        background-color: #5a4c4c;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div class="sidenav">
+      <div class="sidebar">
+        <img
+          src="../Mutimedia/Images/man_smoke.jpg"
+          alt=""
+          width="100"
+          height="100"
+        /><img
+          src="../Mutimedia/Images/home.png"
+          alt=""
+          width="80"
+          height="80"
+        /><img
+          src="../Mutimedia/Images/about1.png"
+          alt=""
+          width="80"
+          height="80"
+        /><img
+          src="../Mutimedia/Images/Photos1.png"
+          alt=""
+          width="80"
+          height="80"
+        />
+        <img
+          src="../Mutimedia/Images/contact2.png"
+          alt=""
+          width="80"
+          height="80"
+        />
+      </div>
+    </div>
+    <div class="profile" id="home">
+      <h1>Masna Eshwar</h1>
+      <br />
+      <p id="pic">I am A Photographer</p>
+      <br />
+      <img src="../Mutimedia/Images/man_smoke.jpg" alt="" />
+    </div>
+    <br />
+    <div class="cnt">
+      <p id="name">My Name</p>
+      <hr style="width: 12vw" />
+      <p id="p2" style="text-align: justify; line-height: 25px">
+        Some text about me. Some text about me. I am lorem ipsum consectetur
+        adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+        magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+        in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa
+        qui officia deserunt mollit anim id est laborum consectetur adipiscing
+        elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi
+        ut aliquip ex ea commodo consequat.
+      </p>
+    </div>
+    <div class="in">
+      <h2>My Skills</h2>
+      <br />
+      <p class="hole">Photography</p>
+      <br />
+      <div style="height: 20px; width: 100%; display: flex">
+        <div style="width: 80%; background-color: rgb(173, 193, 178)"></div>
+        <div style="width: 20%; background-color: rgb(121, 112, 112)"></div>
+      </div>
+      <br />
+      <p class="hole">Web design</p>
+      <br />
+      <div style="display: flex; width: 100%; height: 20px">
+        <div style="width: 60%; background-color: rgb(173, 193, 178)"></div>
+        <div style="width: 40%; background-color: rgb(121, 112, 112)"></div>
+      </div>
+      <br />
+      <p class="hole">Photoshop</p>
+      <br />
+      <div style="height: 20px; display: flex">
+        <div style="width: 70%; background-color: rgb(173, 193, 178)"></div>
+        <div style="width: 30%; background-color: rgb(121, 112, 112)"></div>
+      </div>
+      <br />
+      <div
+        style="
+          height: 140px;
+          background-color: black;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+        "
+      ></div>
+    </div>
+    <div class="dev">
+      <div class="red">11+ Partners</div>
+      <div class="red">55+ Projects Done</div>
+      <div class="red">89+ Happy Clients</div>
+      <div class="red">150+ Meetings</div>
+    </div>
+    <button id="rs">Download Resume</button>
+    <br /><br />
+    <h2 style="color: blanchedalmond; margin-left: 160px">My Price</h2>
+
+    <hr style="width: 170px; margin-left: 150px" />
+    <br />
+    <div class="price" id="rice">
+      <div class="price1">
+        <p style="background-color: blueviolet">Basic</p>
+
+        <div class="d1">
+          <p>Web Design</p>
+          <hr />
+          <p>Photography</p>
+          <hr />
+          <p>50GB Storage</p>
+          <hr />
+          <p>Mail Support</p>
+          <hr />
+          <h1>$10</h1>
+          <p>per month</p>
+        </div>
+      </div>
+      <div class="price2">
+        <p style="background-color: blueviolet">Basic</p>
+
+        <div>
+          <p>Web Design</p>
+          <hr />
+          <p>Photography</p>
+          <hr />
+          <p>50GB Storage</p>
+          <hr />
+          <p>Mail Support</p>
+          <hr />
+          <h1>$30</h1>
+          <p>per month</p>
+        </div>
+      </div>
+    </div>
+    <div class="fat">
+      <h2 style="color: rgb(126, 179, 74)">My Reputation</h2>
+      <hr width="170px" />
+      <br />
+
+      <img src="../Mutimedia/Images/b7.webp" alt="" class="mod" />
+      <div style="display: inline-block; margin-left: 10px">
+        <h3 style="color: rgb(134, 148, 141)">
+          Shane Watson . CEO at Australia Cricket
+        </h3>
+        <p style="color: brown">Watson Saved from a ipl 2020</p>
+      </div>
+      <br /><br />
+      <img src="../Mutimedia/Images/b6.jpg" alt="" class="mod" />
+      <div style="display: inline-block; margin-left: 10px">
+        <h3 style="color: rgb(134, 148, 141)">
+          Brendan Meccullum. CEO at Fielding
+        </h3>
+        <p style="color: brown">NewZealand Player</p>
+      </div>
+    </div>
+    <div style="margin-left: 150px">
+      <h2 style="color: rgb(139, 128, 99)">My Photos</h2>
+      <hr width="150px" />
+    </div>
+    <div class="photos" id="photos">
+      <br /><br />
+
+      <div class="photos-1">
+        <div class="photos-2">
+          <img src="../Mutimedia/Images/mc1.jpg" alt="" />
+          <img src="../Mutimedia/Images/mc2.jpg" alt="" />
+          <img src="../Mutimedia/Images/mp3.jpg" alt="" />
+          <img src="../Mutimedia/Images/mc3.jpg" alt="" />
+        </div>
+        <div class="photos-2">
+          <img src="../Mutimedia/Images/mp1.jpg" alt="" />
+          <img src="../Mutimedia/Images/mp2.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+    <br /><br /><br />
+    <h2 style="color: #5a4c4c; margin-left: 180px">Contact Me</h2>
+    <hr width="200px" style="margin-left: 170px; margin-bottom: 30px" />
+    <div class="far">
+      <div>
+        <img src="../Mutimedia/Images/maw1.png" alt="" width="20px" />
+        <p
+          style="
+            color: yellowgreen;
+            font-size: 20px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+              'Lucida Sans', Arial, sans-serif;
+          "
+        >
+          Chicago ,Us
+        </p>
+      </div>
+      <div>
+        <img src="../Mutimedia/Images/maw1.png" alt="" width="20px" />
+        <p
+          style="
+            color: rgb(126, 179, 74);
+            font-size: 20px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+              'Lucida Sans', Arial, sans-serif;
+          "
+        >
+          Chicago@gmail.com
+        </p>
+      </div>
+      <div>
+        <img
+          src="../Mutimedia/Images/maw1.png"
+          alt=""
+          style="color: aliceblue"
+          width="20px"
+        />
+        <p
+          style="
+            color: cadetblue;
+            font-size: 20px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+              'Lucida Sans', Arial, sans-serif;
+          "
+        >
+          +21 48293801
+        </p>
+      </div>
+    </div>
+    <br /><br />
+    <p style="color: azure; margin-left: 210px">
+      Let's Get in touch. Send me a Message .
+    </p>
+    <br />
+    <div style="margin-left: 170px">
+      <form action="">
+        <input type="text" placeholder="Name" name="Eshwar" class="rad" />
+        <br />
+        <input
+          type="email"
+          name="Email"
+          id="mail"
+          placeholder="Email"
+          class="rad"
+        />
+        <br />
+        <input type="text" name="Subject" placeholder="Subject" class="rad" />
+        <br />
+        <input type="text" placeholder="Message" name="Message" class="rad" />
+        <br />
+        <button
+          style="
+            width: 10vw;
+            background-color: whitesmoke;
+            margin-left: 10px;
+            height: 5vh;
+          "
+        >
+          SEND MESSAGE
+        </button>
+      </form>
+    </div>
+    <br /><br />
+    <div>
+      <p
+        style="
+          color: blanchedalmond;
+          font-size: 32px;
+          font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+            'Lucida Sans', Arial, sans-serif;
+          text-align: center;
+        "
+      >
+        Photography
+      </p>
+    </div>
+  </body>
+</html>

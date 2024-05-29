@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      .md {
+        border: 2px solid black;
+        height: 60vh;
+        width: 48vw;
+        padding: 15px;
+        /* display: flex;
+          justify-content: center; */
+        margin-left: 300px;
+        margin-top: 50px;
+        position: fixed;
+      }
+      .a {
+        border: 2px solid black;
+        /* background-image:linear-gradient(,red,green,yellow,blue); */
+        padding: 2px;
+        height: 8vh;
+        width: 100%;
+
+        margin-top: 10px;
+      }
+
+      .b {
+        border: 2px solid black;
+        padding: 5px;
+        height: 25vh;
+        width: 100%;
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-between;
+        gap: 6px;
+      }
+      .b1 {
+        border: 2px solid black;
+        padding: 4px;
+        height: 20vh;
+        width: 40%;
+        margin-top: 10px;
+      }
+      .b2 {
+        border: 2px solid black;
+        padding: 2px;
+        height: 20vh;
+        width: 60%;
+        /* width:60%; */
+        margin-top: 10px;
+      }
+
+      .div {
+        border: 2px solid black;
+        padding: 4px;
+        height: 5vh;
+        width: 5vw;
+
+        margin-top: 10px;
+      }
+      .div2 {
+        border: 2px solid black;
+        padding: 4px;
+        height: 5vh;
+        width: 5vw;
+
+        margin-top: 10px;
+      }
+
+      .b2a {
+        display: flex;
+        justify-content: space-evenly;
+        align-content: space-around;
+        padding: 5px;
+      }
+
+      .b2b {
+        display: flex;
+        justify-content: space-evenly;
+        align-content: space-around;
+        padding: 5px;
+      }
+      .c {
+        border: 2px solid black;
+        padding: 4px;
+        height: 16vh;
+        width: 100%;
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+
+        /* margin-top: 10px;  */
+      }
+      .div1 {
+        border: 2px solid black;
+
+        height: 10vh;
+        width: 8vw;
+
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-content: space-around;
+        padding: 5px;
+      }
+      .subdiv {
+        border: 2px solid black;
+
+        height: 8vh;
+        width: 3vw;
+      }
+      .head {
+        /* display: flex;
+            justify-content: center;*/
+        /* margin-top: 200px;  */
+        margin-left: 550px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 class="head">Flex-Layout</h1>
+
+    <div class="md">
+      <div class="a"></div>
+
+      <div class="b">
+        <div class="b1"></div>
+        <div class="b2">
+          <div class="b2a">
+            <div class="div"></div>
+            <div class="div"></div>
+            <div class="div"></div>
+            <div class="div"></div>
+          </div>
+
+          <div class="b2b">
+            <div class="div2"></div>
+            <div class="div2"></div>
+            <div class="div2"></div>
+            <div class="div2"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="c">
+        <div class="div1">
+          <div class="subdiv"></div>
+          <div class="subdiv"></div>
+        </div>
+
+        <div class="div1">
+          <div class="subdiv"></div>
+          <div class="subdiv"></div>
+        </div>
+        <div class="div1">
+          <div class="subdiv"></div>
+          <div class="subdiv"></div>
+        </div>
+        <div class="div1">
+          <div class="subdiv"></div>
+          <div class="subdiv"></div>
+        </div>
+        <div class="div1">
+          <div class="subdiv"></div>
+          <div class="subdiv"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

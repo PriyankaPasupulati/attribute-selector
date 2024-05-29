@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+
+        }
+    </style>
+   
+</head>
+<body >
+    <fieldset class="fieldset" style= "width:  30%;"  >
+        <legend>Registration Form</legend>
+   
+<form style="background-image: url(https://cdn.wallpapersafari.com/2/71/yStErj.jpg);"; font-size: larger;  width: 700px; border:8  " >
+   
+    <label for="fname">Enter username:</label>
+    <input type="text" placeholder="username" required pattern="[a-z]{5}" id="fname">
+   <br><br>
+    <label class="email" for="email">enter email:</label>
+    <input type="text" placeholder="email" required pattern="a-z A-Z@ chars" id="email">
+    <br><br>
+    <label for="password">enter password:</label>
+    <input type="password" placeholder="password" required pattern="[a-z A-Z@#$] {20,100}" id="password">
+    <br><br>
+    <label for="phone">phone number:</label>
+    <input type="number" placeholder="phone" required pattern="{10}" id="phone">
+    <br><br>
+    <label for="address">Address:</label>
+    <input type="text" placeholder="address"  id="address">
+    <br><br>
+    <label for="dob">DOB</label>
+    <input type="date" placeholder="DOB" id="dob">
+    <br><br>
+    <label for="week">Week</label>
+    <input type="week" placeholder="week" id="week">
+    <br><br>
+    <label for="fname">Enter username:</label>
+    <input  readonly="text" placeholder="username" required pattern="[a-z]{5}" id="fname">
+    <br><br>
+    <label class="email" for="email">enter email:</label>
+    <input disabled type="text" placeholder="email" required pattern="a-z A-Z@ chars" id="email">
+    <br><br>
+   
+    <label >enter gender:</label>
+  
+    <input type="radio"  id="male" name="gender" value="male">
+    <label for="male">Male</label>
+    <input type="radio"  id="Female" name="gender" value="Female">
+    <label for="Female">Female</label>
+    <input type="radio"  id="others" name="gender" value="others">
+    <label for="others">Others</label>
+    <br>
+    <p>enter fav scooty:</p>
+    <input type="checkbox" id="scooty1" name="scooty1" value="vespa">
+    <label for="scooty1">Vespa</label>
+    <input type="checkbox" id="scooty2" name="scooty2" value="activa">
+    <label for="scooty2">Activa</label>
+    <input type="checkbox" id="scooty3" name="scooty3" value="honda">
+    <label for="scooty3">Honda Dio</label>
+    <input type="checkbox" id="scooty4" name="scooty4" value="jupiter">
+    <label for="scooty4">TVS jupiter</label>
+    <br><br>
+   <input type="file" multiple>
+   <br><br>
+   <label for="range">0</label>
+   <input type="range" min="0"  max="100" id="range">
+   <label for="range">100</label>
+   <br><br>
+
+   <input  style="background-color: rgb(81, 223, 104);" type="submit" value="register">
+   <input style="background-color: rgb(236, 64, 64);"  type="reset" value="cancel">
+
+</form>
+</fieldset>
+</body>
+</html>
